@@ -319,7 +319,7 @@
 
 <div class="toolbar">
   <div class="search-box">
-    <input id="searchInput" type="text" placeholder="ابحثي برقم المادة أو بكلمة من نصّها...">
+    <input id="searchInput" type="text" placeholder="ابحث برقم المادة أو بكلمة ذات دلالة...">
     <span class="ic">🔍</span>
   </div>
   <div class="filters">
@@ -550,7 +550,7 @@ function render(){
   });
 
   if(items.length === 0){
-    const msg = activeFilter === 'fav' ? 'ما ضفتِ أي مادة للمفضلة بعد' : 'ما فيه مواد تطابق البحث الحالي';
+    const msg = activeFilter === 'fav' ? 'لا يوجدأي مادة مفضّلة بعد' : 'لا يوجد مواد تطابق البحث الحالي';
     grid.innerHTML = `<div class="no-results">${msg}</div>`;
     return;
   }
