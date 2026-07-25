@@ -272,7 +272,7 @@
       </svg>
       <div class="brand-text">
         <b>وصل</b>
-        <span>ربط الأنظمة بلوائحها التنفيذية</span>
+        <span>ربط أنظمة وزارة الحج والعمرة بلوائحها التنفيذية</span>
       </div>
     </div>
     <nav class="links">
@@ -409,7 +409,7 @@ function render(){
   });
 
   if(items.length === 0){
-    const msg = activeFilter === 'fav' ? 'ما ضفتِ أي مادة للمفضلة بعد' : 'ما فيه مواد تطابق البحث الحالي';
+    const msg = activeFilter === 'fav' ? 'لا توجد أي مادة مفضّلة بعد' : 'لا يوجد مواد تطابق البحث الحالي';
     grid.innerHTML = `<div class="no-results">${msg}</div>`;
     return;
   }
